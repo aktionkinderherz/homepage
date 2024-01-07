@@ -1807,3 +1807,35 @@ textarea.w-select {
 .w-condition-invisible {
   display: none !important;
 }
+
+/* Add styles for the mobile menu button */
+.mobile-menu-btn {
+  display: none;
+  cursor: pointer;
+}
+
+/* Styles for the bars in the button */
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  /* Hide the regular menu on mobile */
+  .nav-menu {
+    display: none;
+  }
+
+  /* Show the mobile menu button on mobile */
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  /* Show the menu when the button is clicked */
+  .nav-menu.show {
+    display: block;
+  }
+}

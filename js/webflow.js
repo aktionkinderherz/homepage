@@ -4013,3 +4013,14 @@ Webflow.require('ix').init([{
       }]
   }
 }]);
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Get the mobile menu button and the navigation menu
+    var mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    var navMenu = document.querySelector('.nav-menu');
+
+    // Toggle the 'show' class on the navigation menu when the button is clicked
+    mobileMenuBtn.addEventListener('click', function () {
+      navMenu.classList.toggle('show');
+    });
+  });
