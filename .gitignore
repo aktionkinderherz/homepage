@@ -1,2 +1,5 @@
 # Lokales Archiv, nicht versioniert
 .archive/
+
+# Lokale Claude-Code-Einstellungen
+.claude/
